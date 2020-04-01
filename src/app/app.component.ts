@@ -2,9 +2,12 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: `
+             <app-hero-form-reactive></app-hero-form-reactive>`
 })
 export class AppComponent {
-  title = 'AngularForms';
+
+  ngAfterViewChecked() {
+    console.log('afterView Checked');
+  }
 }
