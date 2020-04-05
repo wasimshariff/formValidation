@@ -1,5 +1,5 @@
 /* tslint:disable: member-ordering forin */
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 import { forbiddenNameValidator } from '../shared/forbidden-name.directive';
 import { identityRevealedValidator } from '../shared/identity-revealed.directive';
@@ -15,6 +15,8 @@ export class HeroFormReactiveComponent implements OnInit {
   powers = ['Really Smart', 'Super Flexible', 'Weather Changer'];
 
   hero = { name: 'Dr.', alterEgo: 'Dr. What', power: this.powers[0] };
+
+  @Input()
   heroForm: FormGroup;
 
   ngOnInit(): void {

@@ -8,6 +8,7 @@ import { HeroFormReactiveComponent } from './reactive/hero-form-reactive.compone
 import { ForbiddenValidatorDirective } from './shared/forbidden-name.directive';
 import { IdentityRevealedValidatorDirective } from './shared/identity-revealed.directive';
 import { UniqueAlterEgoValidatorDirective } from './shared/alter-ego.directive';
+import { AppChildComponent } from './app-child/app-child.component';
 
 @NgModule({
   imports: [
@@ -20,7 +21,8 @@ import { UniqueAlterEgoValidatorDirective } from './shared/alter-ego.directive';
     HeroFormReactiveComponent,
     ForbiddenValidatorDirective,
     IdentityRevealedValidatorDirective,
-    UniqueAlterEgoValidatorDirective
+    UniqueAlterEgoValidatorDirective,
+    AppChildComponent
   ],
   bootstrap:    [ AppComponent ]
 })
